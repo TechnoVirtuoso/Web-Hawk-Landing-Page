@@ -1,0 +1,61 @@
+{
+    "success": true,
+    "code": "200",
+    "message": "request processed successfully",
+    "data": [
+        {
+            "createdAt": "2024-08-29T07:19:03.000+00:00",
+            "updatedAt": "2024-08-29T07:19:03.000+00:00",
+            "id": "b660001b-35d6-4abe-9189-669d97b3333d",
+            "otp": "830845",
+            "expiresAt": "2024-08-29T08:29:02",
+            "expired": false,
+            "used": false,
+            "purpose": "PHONE",
+            "client": {
+                "createdAt": "2024-08-29T07:19:03.000+00:00",
+                "updatedAt": "2024-08-29T07:19:03.000+00:00",
+                "id": "affa27d2-4622-4f99-a8a3-9079f44737c2",
+                "name": "NOAH AYITEY",
+                "telephoneNumber": "0244780180",
+                "email": "noahayiteytps@gmail.com",
+                "position": null,
+                "ssnitNumber": null,
+                "createdBy": null,
+                "employer": {
+                    "createdAt": "2024-08-29T07:19:03.000+00:00",
+                    "updatedAt": "2024-08-29T07:19:03.000+00:00",
+                    "id": "4ed79b65-587f-4a98-8c89-fa919161c24a",
+                    "employerNumber": "OMAP/2024/0222",
+                    "employerName": "THE PROFESSIONAL'S SECURITY COMPANY LIMITED",
+                    "taxNumber": "C0030634563",
+                    "schemeName": "OLD MUTUAL ASPIRE PENSION SCHEME",
+                    "schemeId": 2,
+                    "pensionTypeName": "OCCUPATIONAL PENSION SCHEME (TIER 2)",
+                    "pensionTypeId": "001",
+                    "registrationNumber": "CS223892019",
+                    "phone": "0244780180",
+                    "email": "noahayiteytps@gmail.com"
+                },
+                "user": {
+                    "createdAt": "2024-08-29T07:19:03.000+00:00",
+                    "updatedAt": "2024-08-29T07:19:03.000+00:00",
+                    "id": "d6db6289-7d63-48e8-8b85-3cfc61efc221",
+                    "username": "noahayiteytps@gmail.com",
+                    "password": null,
+                    "role": "SUPER_CLIENT",
+                    "pin": null,
+                    "enabled": false,
+                    "credentialsNonExpired": true,
+                    "accountNonExpired": true,
+                    "accountNonLocked": true,
+                    "authorities": [
+                        {
+                            "authority": "ROLE_SUPER_CLIENT"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
