@@ -40,7 +40,7 @@ const HowItWorks = () => {
         <div className="mx-auto max-w-[100rem] py-20 px-6 lg:px-8 flex flex-col lg:flex-row justify-between lg:items-center gap-10">
           <div>
             <h2 className="text-4xl font-black tracking-tight uppercase text-white sm:text-6xl">
-              How It Works
+              How It Works 
             </h2>
             <p className="mt-6 text-lg font-medium sm:text-2xl max-w-xl leading-8 text-white">
               Your website&apos;s visitors are your hottest leads. With

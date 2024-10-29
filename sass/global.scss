@@ -1,0 +1,133 @@
+@import "./global_req.scss";
+
+.rubik-f {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+button.simple_white_btn {
+    all: unset;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+
+    color: #231c91;
+    text-align: center;
+    font-family: $mont;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+
+    padding: 10px;
+    // border: 2px solid #231c91;
+}
+
+button.simple_dark_btn {
+    all: unset;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #231c91;
+
+    color: white;
+    text-align: center;
+    font-family: $mont;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+
+    padding: 10px;
+    // border: 2px solid #231c91;
+}
+
+button.simple_outline_btn {
+    all: unset;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;
+
+    color: white;
+    text-align: center;
+    font-family: $mont;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.SPACER-150 {
+    padding-top: 150px;
+
+    // background: linear-gradient(
+    //     90deg,
+    //     #fff 16.33%,
+    //     hsla(0, 0%, 100%, 0) 49.98%,
+    //     #fff 83.01%
+    // );
+    // backdrop-filter: blur(10px);
+    // -webkit-backdrop-filter: blur(10px);
+
+    @include responsive(lg) {
+        padding-top: 100px;
+    }
+    @include responsive(md) {
+        padding-top: 50px;
+    }
+}
+.GLOBAL_TITLE {
+    color: #202636;
+    font-family: $mont;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 52px;
+    text-align: center;
+    .mod {
+        color: #4f46e5;
+        font-weight: 600;
+    }
+
+    &.LIGHT {
+        font-weight: 300;
+    }
+
+    @include responsive(lg) {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+.SPACER-65 {
+    padding-top: 65px;
+
+    @include responsive(lg) {
+        padding-top: 100px;
+    }
+    @include responsive(md) {
+        padding-top: 50px;
+    }
+}
+
+.SPACER-80 {
+    padding-top: 80px;
+
+    @include responsive(lg) {
+        padding-top: 32px;
+    }
+}
+
+.SPACER-70 {
+    padding-top: 70px;
+
+    @include responsive(lg) {
+        padding-top: 50px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}

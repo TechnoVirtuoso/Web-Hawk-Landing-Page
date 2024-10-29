@@ -1,0 +1,137 @@
+@import "@/sass/global_req.scss";
+
+.ImageCta {
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 0 45px;
+    &-wrapper {
+        max-width: $max_w;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 79px;
+        align-items: center;
+        height: auto;
+        &.revert {
+            .image {
+                order: -1;
+            }
+        }
+
+        @include responsive(md) {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            .image {
+                order: -1;
+            }
+        }
+        .content {
+            .sub_title {
+                color: #4f46e5;
+                font-family: $mont;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 16px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                @include responsive(lg) {
+                    font-size: 18px;
+                }
+            }
+            .title {
+                color: #202636;
+                font-family: $mont;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 600;
+                text-transform: capitalize;
+                line-height: 72px;
+                .mod {
+                    color: #4f46e5;
+                    font-weight: 600;
+                }
+                &.LIGHT {
+                    font-weight: 400 !important;
+                }
+
+                @include responsive(lg) {
+                    font-size: 30px;
+                    line-height: 1.2;
+                }
+
+                @include responsive(md) {
+                    line-height: 1.2;
+                }
+            }
+            .description {
+                margin-top: 40px;
+                max-width: 575px;
+                color: #202636;
+                font-family: $mont;
+                font-size: 26px;
+                font-style: normal;
+                line-height: 36px;
+                font-weight: 300;
+                height: 53px;
+                @include responsive(lg) {
+                    font-size: 18px;
+                }
+                @include responsive(md) {
+                    font-size: 16px;
+                    margin-top: 30px;
+                    max-width: 100%;
+                    line-height: 1.5;
+                }
+            }
+            button {
+                padding: 0 !important;
+                font-size: 24px !important;
+                width: 257px !important;
+                height: 80px !important;
+
+                @include responsive(md) {
+                    width: 111px !important;
+                    height: 42px !important;
+                    font-size: 18px !important;
+                    margin-top: 25px;
+                }
+            }
+        }
+        .image {
+            width: 100%;
+            display: grid;
+            max-width: 610px;
+            grid-template-columns: 1fr;
+            height: auto;
+            @include responsive(md) {
+                max-width: 100%;
+            }
+            svg {
+                height: auto;
+            }
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+            @media (max-height: 476px) {
+                height: auto !important;
+            }
+            .frame {
+                @media (max-width: 476px) {
+                    height: 340px !important;
+                }
+            }
+            @include responsive(sm) {
+                grid-template-columns: 1fr;
+                justify-content: flex-start;
+                div {
+                    width: auto !important;
+                }
+            }
+        }
+    }
+}

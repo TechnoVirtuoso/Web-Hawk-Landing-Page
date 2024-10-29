@@ -1,0 +1,59 @@
+@import "/sass/global_req.scss";
+
+.Landing-Intro {
+    max-width: $max_w;
+    margin: 0 auto;
+    text-align: center;
+    .title {
+        color: #202636;
+        font-family: $mont;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 48px;
+        &.LIGHT {
+            font-weight: 300;
+        }
+        .mod {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include responsive(lg) {
+            font-size: 30px;
+            line-height: 1.5;
+        }
+
+        @include responsive(sm) {
+            font-size: 30px;
+            line-height: 1;
+        }
+    }
+    .sub_title {
+        color: #202636;
+        text-align: center;
+        font-family: $mont;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
+        max-width: 640px;
+        margin: 0 auto;
+        opacity: 0.8;
+        margin-top: 36px;
+        @include responsive(lg) {
+            font-size: 18px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        @include responsive(md) {
+            font-size: 12px;
+            max-width: 300px;
+        }
+    }
+}

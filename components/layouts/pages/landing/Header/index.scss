@@ -1,0 +1,109 @@
+@import "@/sass/global_req.scss";
+
+.Landing-Header {
+    max-width: 1300px;
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 24px;
+    background: linear-gradient(180deg, #4f46e5 0%, #322ab0 100%);
+
+    z-index: 123;
+    .logo{
+        svg{
+            @media (max-width:380px) {
+                width: 100px;
+            }
+        }
+    }
+
+    .MobileMenu {
+        position: absolute;
+        top: calc(100% + 3px);
+        left: 0;
+        width: 100%;
+        padding: 10px 16px;
+        border-radius: 8px;
+        background: linear-gradient(180deg, #4f46e5 0%, #322ab0 100%);
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                padding: 10px 5px;
+                display: block;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    .MobileMenu.open {
+        max-height: 300px; /* Adjust as needed */
+        opacity: 1;
+    }
+
+    @include responsive(xl) {
+        width: calc(100% - 50px);
+    }
+    @media (max-width:380px) {
+        width: calc(100% - 25px);
+    }
+    nav {
+        ul {
+            display: flex;
+            gap: 40px;
+            @include responsive(md) {
+                gap: 6px;
+                display: none;
+            }
+            li {
+                color: #fff;
+                font-family: $mont;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                text-transform: capitalize;
+                cursor: pointer;
+
+                @include responsive(md) {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        button.simple_white_btn {
+            width: 119px;
+            height: 40px;
+            padding: 0;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+
+            @include responsive(md) {
+                font-size: 12px !important;
+                width: auto !important;
+                height: auto !important;
+                padding: 8px 12px !important;
+            }
+        }
+        .mobile-ham {
+            display: none;
+            @include responsive(md) {
+                display: block;
+            }
+        }
+    }
+}

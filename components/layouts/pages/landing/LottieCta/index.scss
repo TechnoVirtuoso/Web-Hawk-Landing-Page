@@ -1,0 +1,169 @@
+@import "@/sass/global_req.scss";
+
+.LottieCta {
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 0 45px;
+
+    &.SIDE {
+        .LottieCta-wrapper {
+            border-left: 1px solid #231c91;
+            border-radius: 12px;
+            .content {
+                padding: 0px 26px;
+                padding-right: 0;
+            }
+            &.revert {
+                .content {
+                    border-left: 0;
+                    padding-right: 26px;
+                }
+                border-left: none;
+                border-right: 1px solid #231c91;
+            }
+            @include responsive(md) {
+                border-right: 0 solid #231c91 !important;
+                border-left: 0 solid #231c91 !important;
+                .content {
+                    border-bottom: 1px solid #231c91 !important;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+    &-wrapper {
+        max-width: $max_w;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 25px;
+        align-items: center;
+        height: auto;
+        &.revert {
+            gap: 80px;
+            grid-template-columns: 1fr 1fr;
+            @include responsive(md) {
+                gap: 0px;
+            }
+            .image {
+                order: -1;
+            }
+        }
+
+        @include responsive(md) {
+            grid-template-columns: 1fr !important;
+            gap: 0px;
+            .image {
+                order: -1;
+            }
+        }
+        .content {
+            background-color: white;
+            @include responsive(md) {
+                padding: 30px 10px !important;
+            }
+            .title {
+                color: #202636;
+                font-family: $mont;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 600;
+                text-transform: capitalize;
+                line-height: 1;
+                .mod {
+                    color: #4f46e5;
+                    font-weight: 600;
+                }
+
+                &.LIGHT {
+                    font-weight: 400;
+                }
+
+                @include responsive(lg) {
+                    font-size: 30px;
+                    line-height: 1.2;
+                }
+
+                @include responsive(md) {
+                    font-size: 26px;
+                    line-height: 1.2;
+                }
+            }
+            .description {
+                margin-top: 30px;
+                margin-bottom: 50px;
+                color: #202636;
+                font-family: $mont;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px;
+                max-width: 630px;
+                @include responsive(lg) {
+                    margin: 20px 0;
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+                @include responsive(md) {
+                    font-size: 12px;
+                    margin: 10px 0;
+                    margin-bottom: 0;
+                }
+            }
+            button {
+                padding: 0 !important;
+                font-size: 24px !important;
+                width: 257px !important;
+                height: 80px !important;
+                font-weight: 700;
+                box-sizing: border-box;
+                @include responsive(md) {
+                    width: 198px !important;
+                    height: 62px !important;
+                    font-size: 20px !important;
+                    margin-top: 40px;
+                }
+            }
+        }
+        .image {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            height: auto;
+            svg {
+                height: auto;
+            }
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+            @media (max-height: 476px) {
+                height: auto !important;
+            }
+            .frame {
+                @include responsive(md) {
+                    background-color: white;
+                }
+                @media (max-width: 476px) {
+                    height: 340px !important;
+                }
+                .animate-item {
+                    flex: 1;
+                }
+            }
+            @include responsive(sm) {
+                grid-template-columns: 1fr;
+                justify-content: flex-start;
+                div {
+                    width: 100% !important;
+                }
+            }
+        }
+        .simple_white_btn {
+            border: 1px solid #231c91;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import "@/sass/global_req.scss";
+
+.Landing-CtaSection {
+    width: 100%;
+    padding: 0 8px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-wrapper {
+        max-width: calc($max_w + 1000px);
+        margin: 0 auto;
+
+        border-radius: 32px;
+
+        padding: 110px 20px;
+
+        overflow: hidden;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+
+        @include responsive(md) {
+            gap: 30px;
+        }
+        .title {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+
+            color: #fff;
+            font-family: $mont;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+            text-transform: uppercase;
+
+            @include responsive(md) {
+                font-size: 30px;
+            }
+        }
+        .description {
+            max-width: 900px;
+            margin: 0 auto;
+
+            color: #fff;
+            text-align: center;
+            font-family: $mont;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 36px;
+
+            @include responsive(md) {
+                margin-left: 0;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+        button {
+            margin-top: 28px !important;
+            padding: 0 !important;
+            width: 288px !important;
+            height: 84px !important;
+            font-size: 24px !important;
+            box-sizing: border-box;
+            @include responsive(md) {
+                width: 212px !important;
+                height: 62px !important;
+                font-size: 17px !important;
+                margin-top: 50px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import "@/sass/global_req.scss";
+
+.Landing-Icons {
+    padding: 0 20px;
+    .padd-wrapper {
+        max-width: $max_w;
+        margin: 0 auto;
+
+        row-gap: 10px;
+
+        .slider {
+            overflow: hidden;
+
+            &-container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .icon-wrapper {
+                flex: 0 0 calc(100% / 11);
+                min-width: 0;
+                gap: 30px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // padding: 0 10px;
+                @include responsive(lg) {
+                    flex: 0 0 calc(100% / 4);
+                }
+                @include responsive(xs) {
+                    flex: 0 0 calc(100% / 4) !important;
+
+                    // svg {
+                    //     width: 100%;
+                    // }
+                }
+               
+            }
+        }
+    }
+}

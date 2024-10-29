@@ -1,0 +1,86 @@
+@import "@/sass/global_req.scss";
+
+.LottieCards {
+    padding: 0 20px;
+    &-wrapper {
+        max-width: $max_w;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        @include responsive(lg) {
+            grid-template-columns: 1fr;
+        }
+        @include responsive(sm) {
+            gap: 0;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 0.5rem;
+            .frame {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 280px !important;
+
+                @include responsive(lg) {
+                    grid-template-columns: 1fr;
+                    height: auto !important;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                @media (max-width:767px) {
+                    height: 340px !important;
+                }
+            }
+            .content {
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                @media (min-width:1200px) {
+                    height: calc(100% - 240px);
+                    justify-content: space-between;      
+                }
+              
+                .title {
+                    color: #000;
+                    font-family: $mont;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    @include responsive(md) {
+                        font-size: 18px;
+                        line-height: 1.5;
+                    }
+                }
+                .description {
+                    color: #000;
+                    font-family: $mont;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    @include responsive(md) {
+                        font-size: 18px;
+                        line-height: 1.5;
+                    }
+                    @include responsive(sm) {
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+                }
+                button {
+                    align-self: center;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
