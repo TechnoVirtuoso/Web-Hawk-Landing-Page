@@ -20,6 +20,7 @@ const LottieCards = () => {
                         />
                     </Frame>
                     <div className="content">
+                        <div className="wrap-title-desc">
                         <div className="title">Put Our Script to Work</div>
                         <div className="description">
                             We provide you with a simple script to embed on your
@@ -29,6 +30,8 @@ const LottieCards = () => {
                             gathers key insights about who they are and what
                             they're interested in.
                         </div>
+                        </div>
+                       
                         <button className="simple_dark_btn">Get Started</button>
                     </div>
                 </div>
@@ -42,6 +45,7 @@ const LottieCards = () => {
                         />
                     </Frame>
                     <div className="content">
+                        <div className="wrap-title-desc">
                         <div className="title">Get the Full Picture</div>
                         <div className="description">
                             As visitors browse your site, Webhawk.ai captures
@@ -49,6 +53,8 @@ const LottieCards = () => {
                             details, building a comprehensive profile of your
                             hottest prospects.
                         </div>
+                        </div>
+                        
                         <button className="simple_dark_btn">Get Started</button>
                     </div>
                 </div>
@@ -62,7 +68,8 @@ const LottieCards = () => {
                         />
                     </Frame>
                     <div className="content">
-                        <div className="title">Turn Insights Into Action</div>
+                    <div className="wrap-title-desc">
+                    <div className="title">Turn Insights Into Action</div>
                         <div className="description">
                             With detailed visitor profiles at your fingertips,
                             it’s time to take action. Use these insights for
@@ -70,6 +77,7 @@ const LottieCards = () => {
                             or direct engagement. Webhawk.ai empowers you to
                             connect with the right leads, at the right time.
                         </div>
+                    </div>
                         <button className="simple_dark_btn">Get Started</button>
                     </div>
                 </div>

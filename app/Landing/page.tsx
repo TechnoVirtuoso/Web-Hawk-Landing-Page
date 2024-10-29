@@ -144,7 +144,7 @@ const page = () => {
                     image={Image2}
                     sub_title="Why Webhawk.ai?"
                 />
-                <Spacer paddingTop={100} breakpoints={{ 700: 50 }} />
+                <Spacer paddingTop={100} breakpoints={{ 700: 10 }} />
                 <ModernImageCta
                     Title={() => (
                         <>

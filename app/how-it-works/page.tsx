@@ -47,7 +47,7 @@ const page = () => {
             
                 <Spacer paddingTop={70} breakpoints={{ 700: 30 }} />
                 <LottieCards />
-                <Spacer paddingTop={100} breakpoints ={{ 700: 0 }} />
+                {/* <Spacer paddingTop={100} breakpoints ={{ 700: 0 }} /> */}
                 {/* <ImageCta
                     Title={() => (
                         <>
@@ -61,7 +61,7 @@ const page = () => {
                     sub_title="Why Webhawk.ai?"
                 />
                 <Spacer paddingTop={100} breakpoints={{ 700: 50 }} /> */}
-                <ModernImageCta
+                {/* <ModernImageCta
                     Title={() => (
                         <>
                             <span>A live feed of </span>
@@ -74,7 +74,7 @@ const page = () => {
                     description="Here's an example of what you could be seeing in real-time!"
                     sub_title="See Webhawk.ai in Action"
                     font="LIGHT"
-                />
+                /> */}
             </div>
             <Spacer paddingTop={100} breakpoints={{ 700: 50 }} />
             <CtaSection />

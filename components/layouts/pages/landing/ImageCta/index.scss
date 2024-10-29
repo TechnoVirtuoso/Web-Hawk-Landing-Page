@@ -28,6 +28,9 @@
             }
         }
         .content {
+            @include responsive(sm){
+                text-align: center;
+            }
             .sub_title {
                 color: #4f46e5;
                 font-family: $mont;

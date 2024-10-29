@@ -5,6 +5,7 @@ import Image from "next/image";
 // import LOGO from "@/assests/logos/LOGO1.png";
 import { useRouter } from "next/navigation";
 import LOGO from "@/components/ui/IconsSvg/logo";
+import { usePathname } from 'next/navigation';
 
 const Ham: FC<{ color: string }> = ({ color }) => (
     <svg
@@ -69,6 +70,7 @@ const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
     setMobileMenu,
 }) => {
     const router = useRouter()
+    const pathname = usePathname();
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
         const offset = 300; // Set your offset here
@@ -84,6 +86,7 @@ const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
     return (
         <ul>
             <li
+             className={pathname === "/Landing" ? "active" : ""}
                 onClick={() => {
                     setMobileMenu(false);
                     router.push("/Landing")
@@ -93,6 +96,7 @@ const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
                 Home
             </li>
             <li
+            className={pathname === "/how-it-works" ? "active" : ""}
                 onClick={() => {
                     setMobileMenu(false);
                     router.push("/how-it-works")
@@ -102,6 +106,7 @@ const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
                 How it Works
             </li>
             <li
+             className={pathname === "/pricing" ? "active" : ""}
                 onClick={() => {
                     setMobileMenu(false);
                     router.push("/pricing")
@@ -109,6 +114,17 @@ const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
                 }}
             >
                 Pricing
+            </li>
+
+            <li 
+            className="mob_nav"
+                onClick={() => {
+                    setMobileMenu(false);
+                    // router.push("/pricing")
+                    // scrollToSection("PRICING");
+                }}
+            >
+                Get Started
             </li>
         </ul>
     );

@@ -40,7 +40,7 @@ const Pricing: FC<Props> = ({ Title, sub_title, font, bg }) => {
                                     <li>500 matches per month</li>
                                     <li>$0.10 per match over 500</li>
                                 </ul>
-                                <button className="simple_dark_btn">
+                                <button className="simple_white_btn">
                                     Get Started
                                 </button>
                             </div>
@@ -96,7 +96,7 @@ const Pricing: FC<Props> = ({ Title, sub_title, font, bg }) => {
                                     <li>5,000 matches per month</li>
                                     <li>$0.07 per match over 5,000</li>
                                 </ul>
-                                <button className="simple_dark_btn">
+                                <button className="simple_white_btn">
                                     Get Started
                                 </button>
                             </div>
