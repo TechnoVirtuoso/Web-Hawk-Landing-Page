@@ -1,13 +1,10 @@
-"use client";
 import ICON_CHARTHOP from "@/components/ui/IconsSvg/ICON_CHARTHOP";
 import ICON_CYBERHEAVEN from "@/components/ui/IconsSvg/ICON_CYBERHEAVEN";
 import ICON_PILOT from "@/components/ui/IconsSvg/ICON_PILOT";
 import ICON_VERKADA from "@/components/ui/IconsSvg/ICON_VERKADA";
 import "./index.scss";
 import ICON_VOUCH from "@/components/ui/IconsSvg/ICON_VOUCH";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { useEffect } from "react";
+import Marquee from "react-fast-marquee";
 
 const AllIcons = [
     ICON_CHARTHOP,
@@ -27,37 +24,22 @@ const AllIcons = [
 ];
 
 const Icons = () => {
-    const [emblaRef, emblaApi] = useEmblaCarousel(
-        {
-            align: "start",
-            loop: true,
-        },
-        [
-            Autoplay({
-                delay: 3000,
-            }),
-        ]
-    );
-
-    useEffect(() => {
-        if (emblaApi) {
-        }
-    }, [emblaApi]);
-
     return (
         <div className="Landing-Icons">
             <div className="padd-wrapper">
-                <div className="Landing-Icons-wrapper">
-                    <div className="slider" ref={emblaRef}>
-                        <div className="slider-container">
-                            {AllIcons.map((Icon, i) => (
-                                <div className="icon-wrapper" key={i}>
-                                    <Icon />
-                                </div>
-                            ))}
+                <Marquee loop={0}>
+                    {AllIcons.map((Icon, i) => (
+                        <div
+                            style={{
+                                padding: "0 20px",
+                            }}
+                            className="icon-wrapper"
+                            key={i}
+                        >
+                            <Icon />
                         </div>
-                    </div>
-                </div>
+                    ))}
+                </Marquee>
             </div>
         </div>
     );

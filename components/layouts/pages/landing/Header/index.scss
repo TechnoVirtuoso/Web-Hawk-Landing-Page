@@ -17,6 +17,7 @@
 
     z-index: 123;
     .logo{
+        cursor: pointer;
         svg{
             @media (max-width:380px) {
                 width: 100px;

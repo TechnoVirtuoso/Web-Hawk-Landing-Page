@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import React, { FC, useState } from "react";
 import "./index.scss";
 import Image from "next/image";
 // import LOGO from "@/assests/logos/LOGO1.png";
 import { useRouter } from "next/navigation";
 import LOGO from "@/components/ui/IconsSvg/logo";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
 const Ham: FC<{ color: string }> = ({ color }) => (
     <svg
@@ -38,14 +38,12 @@ const OpenedHam = () => (
 
 const Header = () => {
     const [MobileMenu, setMobileMenu] = useState(false);
+    const router = useRouter();
 
     return (
         <div className="Landing-Header">
-            <div className="logo">
-               
-                <LOGO/>
-                {/* <img src={LOGO.src} width="137.127" height="41.045" alt="LOGO"  /> */}
-
+            <div className="logo" onClick={() => router.push("/Landing")}>
+                <LOGO />
             </div>
             <nav>
                 <Nav setMobileMenu={setMobileMenu} />
@@ -69,13 +67,14 @@ const Header = () => {
 const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
     setMobileMenu,
 }) => {
-    const router = useRouter()
+    const router = useRouter();
     const pathname = usePathname();
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
         const offset = 300; // Set your offset here
         if (section) {
-            const topPos = section.getBoundingClientRect().top + window.scrollY - offset;
+            const topPos =
+                section.getBoundingClientRect().top + window.scrollY - offset;
 
             window.scrollTo({
                 top: topPos,
@@ -86,38 +85,42 @@ const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
     return (
         <ul>
             <li
-             className={pathname === "/Landing" ? "active" : ""}
+                className={pathname === "/Landing" ? "active" : ""}
                 onClick={() => {
                     setMobileMenu(false);
-                    router.push("/Landing")
+                    router.push("/Landing");
                     // scrollToSection("PRODUCT");
                 }}
             >
                 Home
             </li>
             <li
-            className={pathname === "/how-it-works" ? "active" : ""}
+                className={pathname === "/how-it-works" ? "active" : ""}
                 onClick={() => {
                     setMobileMenu(false);
-                    router.push("/how-it-works")
+                    router.push("/how-it-works");
                     // scrollToSection("FEATURES");
                 }}
             >
                 How it Works
             </li>
             <li
-             className={pathname === "/pricing" ? "active" : ""}
+                className={pathname === "/pricing" ? "active" : ""}
                 onClick={() => {
                     setMobileMenu(false);
-                    router.push("/pricing")
+                    router.push("/pricing");
                     // scrollToSection("PRICING");
                 }}
             >
                 Pricing
             </li>
 
-            <li 
-            className="mob_nav"
+            <button
+                className="mob_nav simple_white_btn"
+                style={{
+                    alignSelf: "flex-start",
+                    margin: "20px 0",
+                }}
                 onClick={() => {
                     setMobileMenu(false);
                     // router.push("/pricing")
@@ -125,7 +128,7 @@ const Nav: FC<{ setMobileMenu: (data: boolean) => void }> = ({
                 }}
             >
                 Get Started
-            </li>
+            </button>
         </ul>
     );
 };
