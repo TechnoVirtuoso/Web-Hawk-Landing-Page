@@ -9,6 +9,7 @@ import Image2 from "@/assests/images/Image2.png";
 import Pricing from "@/components/layouts/pages/landing/Pricing";
 import HeroBg2 from "@/assests/images/HeroBg.png";
 import Tiles from "@/assests/images/Tiles.png";
+import HOR_GRID from "@/assests/images/HOR_GRID.png";
 import ModernImageCta from "@/components/layouts/pages/landing/ModerImageCta";
 import CtaSection from "@/components/layouts/pages/landing/CtaSection";
 import Footer from "@/components/layouts/pages/landing/Footer";
@@ -19,8 +20,10 @@ import popup_gif from "@/assests/lotties/popup.json";
 import Lottie from "lottie-react";
 import Frame from "@/components/layouts/pages/landing/Frame";
 import LottieCta from "@/components/layouts/pages/landing/LottieCta";
+import useResponsiveValue from "@/lib/userResponsiveValue";
 
 const page = () => {
+    const img = useResponsiveValue(430, Tiles.src, HOR_GRID.src);
     return (
         <div>
             <Header />
@@ -28,8 +31,9 @@ const page = () => {
             <div
                 className="tiles-wrapper"
                 style={{
-                    backgroundImage: `url('${Tiles.src}')`,
+                    backgroundImage: `url('${img}')`,
                     backgroundPosition: "100% 100%",
+                    backgroundRepeat: "repeat-y"
                 }}
             >
                 <Spacer paddingTop={80} breakpoints={{ 700: 30 }} />

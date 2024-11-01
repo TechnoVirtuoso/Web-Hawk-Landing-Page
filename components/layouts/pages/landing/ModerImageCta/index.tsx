@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import LightPurpleBg from "@/assests/images/LightPurpleBg.png";
-import TileBg from "@/assests/images/TileBg.png";
 import Dashboard2 from "@/assests/images/Dashboard2.png";
+
+import WHITE_GRID from "@/assests/images/WHITE_GRID.png";
 import "./index.scss";
-import Image from "next/image";
 
 type Props = {
     Title: string | FC;
@@ -20,6 +20,7 @@ const ModernImageCta: FC<Props> = ({ Title, description, sub_title, font }) => {
                     backgroundImage: `url(${LightPurpleBg.src})`,
                 }}
             >
+                <img src={WHITE_GRID.src} alt="" className="grid" />
                 <div className="content">
                     <div className="sub_title">{sub_title}</div>
                     <div className={`title ${font}`}>

@@ -39,6 +39,10 @@
                 margin-top: 50px;
             }
 
+            @include responsive(sm) {
+                margin-top: 32px;
+            }
+
             .item {
                 height: 100%;
                 &:not(.mid) {
@@ -54,9 +58,6 @@
                         .amount-per-month {
                             margin-top: 32px !important;
                         }
-                        .item-wrapper {
-                            outline: 1px solid #231c91 !important;
-                        }
                         .items {
                             margin-top: 40px !important;
                             padding-bottom: 50px + 55px !important;
@@ -68,13 +69,18 @@
                             width: 145px !important;
                             height: 55px !important;
                         }
+                        .amount-per-year {
+                            margin-top: 40px !important;
+                            font-weight: 700 !important;
+                        }
                     }
                     .amount-per-year {
-                        margin-top: 40px !important;
-                        font-weight: 700 !important;
                         @include responsive(md) {
-                            margin-top: 20px;
+                            font-weight: 500 !important;
                         }
+                    }
+                    .item-wrapper {
+                        outline: 1px solid #231c91 !important;
                     }
                 }
                 .item-capture {
@@ -100,7 +106,8 @@
                         }
 
                         @include responsive(md) {
-                            padding-bottom: calc(50px + 27px + 43px);
+                            // padding-bottom: calc(50px + 27px + 43px);
+                            padding-bottom: 43px + 20px + 45px;
                         }
 
                         .title {
@@ -196,7 +203,6 @@
                             @include responsive(sm) {
                                 width: 85% !important;
                             }
-                            
                         }
                     }
                 }

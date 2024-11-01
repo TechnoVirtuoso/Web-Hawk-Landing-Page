@@ -15,12 +15,15 @@
     padding: 10px 24px;
     background: linear-gradient(180deg, #4f46e5 0%, #322ab0 100%);
 
+    @include responsive(md) {
+        padding: 15px 10px;
+    }
     z-index: 123;
-    .logo{
+    .logo {
         cursor: pointer;
-        svg{
-            @media (max-width:380px) {
-                width: 100px;
+        svg {
+            @include responsive(md) {
+                width: 90px;
             }
         }
     }
@@ -56,7 +59,7 @@
     @include responsive(xl) {
         width: calc(100% - 50px);
     }
-    @media (max-width:380px) {
+    @media (max-width: 380px) {
         width: calc(100% - 25px);
     }
     nav {
@@ -79,32 +82,31 @@
                 @include responsive(md) {
                     font-size: 14px !important;
                 }
-                &.active{
+                &.active {
                     border-bottom: 2px solid #fff;
                 }
             }
-            @media (min-width:991px) {
-                .mob_nav{
+            @media (min-width: 991px) {
+                .mob_nav {
                     display: none;
-                }    
+                }
             }
-            
         }
     }
     .buttons {
         display: flex;
         align-items: center;
         gap: 6px;
-       
+
         button.simple_white_btn {
             width: 119px;
             height: 40px;
             padding: 0;
             font-size: 15px !important;
             font-weight: 700 !important;
-  
+
             @include responsive(md) {
-                    display: none;
+                display: none;
                 font-size: 12px !important;
                 width: auto !important;
                 height: auto !important;

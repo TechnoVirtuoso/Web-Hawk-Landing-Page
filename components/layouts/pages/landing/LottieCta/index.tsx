@@ -31,7 +31,9 @@ const LottieCta: FC<Props> = ({
         <div className={`LottieCta ${border}`}>
             <div className={`LottieCta-wrapper ${isFlipped ? "revert" : ""}`}>
                 <div className="content">
-                    {sub_title && <div className={`sub_title ${font}`}>{sub_title}</div>}
+                    {sub_title && (
+                        <div className={`sub_title ${font}`}>{sub_title}</div>
+                    )}
                     <div className={`title ${font}`}>
                         {typeof Title === "string" ? Title : <Title />}
                     </div>

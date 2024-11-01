@@ -3,6 +3,7 @@ import "./index.scss";
 import Image, { StaticImageData } from "next/image";
 import DashboardImage from "@/assests/images/HeroDashboard.png";
 import Dashboard2 from "@/assests/images/Dashboard2.png";
+import MOBILE_Dashboard2 from "@/assests/images/HERO_MOBILE_DASHBOARD.png";
 
 type Props =
     | {
@@ -60,7 +61,7 @@ const Hero: FC<Props> = ({ Background, type }) => {
                                     />
                                     <img
                                         className="Landing-Hero-dashboard-bg-mobile"
-                                        src={Dashboard2.src}
+                                        src={MOBILE_Dashboard2.src}
                                         alt=""
                                     />
                                 </>

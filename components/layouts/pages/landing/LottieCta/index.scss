@@ -91,6 +91,7 @@
 
                 @include responsive(md) {
                     font-size: 26px;
+                    font-weight: 400;
                     line-height: 1.2;
                 }
             }
@@ -129,8 +130,9 @@
                     margin-top: 40px;
                 }
                 @include responsive(sm) {
-
-                    margin:40px auto 0;
+                    margin: 40px auto 0;
+                    height: 48px !important;
+                    font-size: 18px !important;
                     width: 100% !important;
                 }
             }
@@ -157,6 +159,9 @@
                 }
                 @media (max-width: 476px) {
                     height: 340px !important;
+                }
+                @include responsive(sm) {
+                    max-height: 256px !important;
                 }
                 .animate-item {
                     flex: 1;

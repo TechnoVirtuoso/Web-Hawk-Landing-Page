@@ -19,7 +19,7 @@
         margin-top: 20px;
         @media (max-width: 1340px) {
             margin-top: 24px;
-            padding-top: 111px;
+            padding-top: 157px;
         }
 
         @include responsive(sm) {
@@ -69,6 +69,9 @@
                 }
                 @media (max-width: 1400px) {
                     padding: 0 20px;
+                }
+                @include responsive(md) {
+                    gap: 35px;
                 }
 
                 .left {
@@ -129,6 +132,9 @@
                         @include responsive(md) {
                             font-size: 14px;
                             line-height: 1.5;
+                            font-weight: 400;
+                            padding: 0 10px;
+                            margin-top: 14px;
                         }
                     }
                     .actions {
@@ -148,7 +154,8 @@
                             justify-content: space-between;
                             max-width: 400px;
                             margin: 0 auto;
-                            margin-top: 50px;
+                            margin-top: 45px;
+                            gap: 13px !important;
                         }
                         .one {
                             font-family: $mont;
@@ -167,6 +174,7 @@
                                 padding: 0 !important;
                                 width: 165px !important;
                                 height: 48px !important;
+                                flex: 1;
                             }
                         }
                     }
@@ -174,7 +182,7 @@
                 .right {
                     .Landing-Hero-dashboard-bg-mobile {
                         display: none;
-                        margin-bottom: -100px;
+                        margin-bottom: -30px;
                         width: 100%;
                         @include responsive(lg) {
                             display: block;

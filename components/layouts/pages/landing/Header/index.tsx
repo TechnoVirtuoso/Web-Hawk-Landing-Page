@@ -9,30 +9,29 @@ import { usePathname } from "next/navigation";
 
 const Ham: FC<{ color: string }> = ({ color }) => (
     <svg
-        width="35"
-        height="35"
-        viewBox="0 0 48 48"
+        width="21"
+        height="14"
+        viewBox="0 0 21 14"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <rect x="10" y="34.4" width="28" height="3.2" fill={color} />
-        <rect x="10" y="26.4" width="28" height="3.2" fill={color} />
-        <rect x="10" y="18.4" width="28" height="3.2" fill={color} />
-        <rect x="10" y="10.4" width="28" height="3.2" fill={color} />
+        <rect width="21" height="2" rx="1" fill="white" />
+        <rect y="6" width="21" height="2" rx="1" fill="white" />
+        <rect y="12" width="21" height="2" rx="1" fill="white" />
     </svg>
 );
 
 const OpenedHam = () => (
     <svg
-        width="35"
-        height="35"
-        viewBox="0 0 48 48"
+        width="21"
+        height="14"
+        viewBox="0 0 21 14"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <rect x="10" y="32.4" width="28" height="3.2" fill="white" />
-        <rect x="18" y="22.4" width="20" height="3.2" fill="white" />
-        <rect x="26" y="12.4" width="12" height="3.2" fill="white" />
+        <rect width="21" height="2" rx="1" fill="white" />
+        <rect y="6" width="21" height="2" rx="1" fill="white" />
+        <rect y="12" width="21" height="2" rx="1" fill="white" />
     </svg>
 );
 
