@@ -17,7 +17,7 @@ const ModernImageCta: FC<Props> = ({ Title, description, sub_title, font }) => {
             <div
                 className={`ModernImageCta-wrapper ${font}`}
                 style={{
-                    backgroundImage: `url(${LightPurpleBg.src})`,
+                    // backgroundImage: `url(${LightPurpleBg.src})`,
                 }}
             >
                 <img src={WHITE_GRID.src} alt="" className="grid" />

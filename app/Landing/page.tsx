@@ -66,7 +66,7 @@ const page = () => {
                         </Frame>
                     )}
                 />
-                <Spacer paddingTop={150} breakpoints={{ 700: 30 }} />
+                <Spacer paddingTop={150} breakpoints={{ 700: 48 }} />
                 <LottieCta
                     Title={() => (
                         <>
@@ -91,7 +91,7 @@ const page = () => {
                     )}
                     isFlipped
                 />
-                <Spacer paddingTop={150} breakpoints={{ 700: 30 }} />
+                <Spacer paddingTop={150} breakpoints={{ 700: 48 }} />
                 <LottieCta
                     Title={() => (
                         <>
@@ -119,7 +119,7 @@ const page = () => {
                         </Frame>
                     )}
                 />
-                <Spacer paddingTop={150} breakpoints={{ 700: 50 }} />
+                <Spacer paddingTop={150} breakpoints={{ 700: 60 }} />
                 <Pricing
                     Title={() => (
                         <>
