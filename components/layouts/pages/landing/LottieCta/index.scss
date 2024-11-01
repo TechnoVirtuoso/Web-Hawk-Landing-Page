@@ -44,6 +44,10 @@
         gap: 25px;
         align-items: center;
         height: auto;
+
+        @media (min-width: 991px) {
+            background-color: white;
+        }
         &.revert {
             gap: 80px;
             grid-template-columns: 1fr 1fr;

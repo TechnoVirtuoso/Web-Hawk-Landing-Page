@@ -29,7 +29,7 @@ const page = () => {
             <div
                 className="tiles-wrapper"
                 style={{
-                    backgroundPosition: "100% 100%",
+                    backgroundPosition: "center 100%",
                     backgroundRepeat: "repeat-y",
                 }}
             >
@@ -158,7 +158,6 @@ const page = () => {
                     )}
                     description="Here's an example of what you could be seeing in real-time!"
                     sub_title="See Webhawk.ai in Action"
-                    font="LIGHT"
                 />
             </div>
             <Spacer paddingTop={100} breakpoints={{ 700: 50 }} />

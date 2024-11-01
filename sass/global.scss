@@ -83,6 +83,9 @@ button.simple_outline_btn {
     @media (max-width: 500px) {
         background-image: url("/images/HOR_GRID.png");
     }
+    @include responsive(md) {
+        // background-position: 100% 100%;
+    }
 }
 .GLOBAL_TITLE {
     color: #202636;
