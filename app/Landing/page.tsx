@@ -3,7 +3,7 @@ import Header from "@/components/layouts/pages/landing/Header";
 import Hero from "@/components/layouts/pages/landing/Hero";
 import Spacer from "@/components/layouts/pages/landing/Spacer";
 import Icons from "@/components/layouts/pages/landing/Icons";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ImageCta from "@/components/layouts/pages/landing/ImageCta";
 import Image2 from "@/assests/images/Image2.png";
 import Pricing from "@/components/layouts/pages/landing/Pricing";
@@ -20,7 +20,27 @@ import popup_gif from "@/assests/lotties/popup.json";
 import Lottie from "lottie-react";
 import Frame from "@/components/layouts/pages/landing/Frame";
 import LottieCta from "@/components/layouts/pages/landing/LottieCta";
-import useResponsiveValue from "@/lib/userResponsiveValue";
+
+const useResponsiveValue = <T,>(bp: number, value1: T, value2: T): T => {
+    const [responsiveValue, setResponsiveValue] = useState<T>(() =>
+        window.innerWidth > bp ? value1 : value2
+    );
+
+    useEffect(() => {
+        const handleResize = () => {
+            setResponsiveValue(window.innerWidth > bp ? value1 : value2);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        // Run on initial load
+        handleResize();
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, [bp, value1, value2]);
+
+    return responsiveValue;
+};
 
 const page = () => {
     const img = useResponsiveValue(430, Tiles.src, HOR_GRID.src);
@@ -33,7 +53,7 @@ const page = () => {
                 style={{
                     backgroundImage: `url('${img}')`,
                     backgroundPosition: "100% 100%",
-                    backgroundRepeat: "repeat-y"
+                    backgroundRepeat: "repeat-y",
                 }}
             >
                 <Spacer paddingTop={80} breakpoints={{ 700: 30 }} />
