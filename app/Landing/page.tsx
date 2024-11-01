@@ -21,29 +21,7 @@ import Lottie from "lottie-react";
 import Frame from "@/components/layouts/pages/landing/Frame";
 import LottieCta from "@/components/layouts/pages/landing/LottieCta";
 
-const useResponsiveValue = <T,>(bp: number, value1: T, value2: T): T => {
-    const [responsiveValue, setResponsiveValue] = useState<T>(() =>
-        window.innerWidth > bp ? value1 : value2
-    );
-
-    useEffect(() => {
-        const handleResize = () => {
-            setResponsiveValue(window.innerWidth > bp ? value1 : value2);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        // Run on initial load
-        handleResize();
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, [bp, value1, value2]);
-
-    return responsiveValue;
-};
-
 const page = () => {
-    const img = useResponsiveValue(430, Tiles.src, HOR_GRID.src);
     return (
         <div>
             <Header />
@@ -51,7 +29,6 @@ const page = () => {
             <div
                 className="tiles-wrapper"
                 style={{
-                    backgroundImage: `url('${img}')`,
                     backgroundPosition: "100% 100%",
                     backgroundRepeat: "repeat-y",
                 }}

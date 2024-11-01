@@ -78,6 +78,12 @@ button.simple_outline_btn {
         padding-top: 50px;
     }
 }
+.tiles-wrapper {
+    background-image: url("/images/Tiles.png");
+    @media (max-width: 500px) {
+        background-image: url("/images/HOR_GRID.png");
+    }
+}
 .GLOBAL_TITLE {
     color: #202636;
     font-family: $mont;
