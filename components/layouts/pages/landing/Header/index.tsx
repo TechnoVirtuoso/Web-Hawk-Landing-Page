@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./index.scss";
 import Image from "next/image";
 // import LOGO from "@/assests/logos/LOGO1.png";
@@ -38,6 +38,22 @@ const OpenedHam = () => (
 const Header = () => {
     const [MobileMenu, setMobileMenu] = useState(false);
     const router = useRouter();
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            setMobileMenu(false);
+        };
+
+        if (MobileMenu) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [MobileMenu]);
 
     return (
         <div className="Landing-Header">

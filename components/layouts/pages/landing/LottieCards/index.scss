@@ -21,7 +21,7 @@
             padding: 20px;
             border-radius: 0.5rem;
             // border: 1px solid #4f46e5;
-            border-left: 1px solid #231c91;
+            // border-left: 1px solid #231c91;
             border-radius: 12px;
             .frame {
                 display: flex;
@@ -32,13 +32,13 @@
                 @include responsive(lg) {
                     grid-template-columns: 1fr;
                     height: auto !important;
-                    img{
+                    img {
                         height: 100%;
                         width: 100%;
                     }
                 }
 
-                @media (max-width:767px) {
+                @media (max-width: 767px) {
                     height: 340px !important;
                 }
             }
@@ -48,11 +48,11 @@
                 flex-direction: column;
                 gap: 10px;
                 text-align: center;
-                @media (min-width:1200px) {
+                @media (min-width: 1200px) {
                     height: calc(100% - 280px);
-                    justify-content: space-between;      
+                    justify-content: space-between;
                 }
-              
+
                 .title {
                     color: #000;
                     font-family: $mont;
@@ -63,6 +63,25 @@
                     @include responsive(md) {
                         font-size: 18px;
                         line-height: 1.5;
+                    }
+
+                    color: #202636;
+                    text-transform: capitalize;
+                    line-height: 1;
+                    .mod {
+                        color: #4f46e5;
+                        font-weight: 600;
+                    }
+                    @include responsive(lg) {
+                        font-size: 30px;
+                        line-height: 1.2;
+                    }
+
+                    @include responsive(md) {
+                        font-size: 26px;
+                        font-weight: 400;
+                        line-height: 1.2;
+                        padding: 0px 10px !important;
                     }
                 }
                 .description {
@@ -84,6 +103,17 @@
                     align-self: center;
                     margin-top: 30px;
                     width: 80%;
+                    &.simple_white_btn {
+                        border: 1px solid #231c91;
+                    }
+                    height: 42px !important;
+                    @include responsive(md) {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    @include responsive(sm) {
+                        width: 90% !important;
+                    }
                 }
             }
         }

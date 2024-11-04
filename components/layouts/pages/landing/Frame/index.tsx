@@ -28,6 +28,7 @@ const Frame: FC<{ children: ReactNode; font?: "LIGHT" }> = ({
                 height: "460px",
                 display: "flex",
                 position: "relative",
+                overflow: "hidden",
             }}
         >
             <img
