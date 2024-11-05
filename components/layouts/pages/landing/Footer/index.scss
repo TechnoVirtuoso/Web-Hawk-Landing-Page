@@ -13,6 +13,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include responsive(xs) {
+            flex-direction: column;
+            gap: 20px;
+        }
         .copyright {
             color: #202636;
             font-family: $dm;
@@ -21,6 +25,9 @@
             font-weight: 600;
             @include responsive(md) {
                 font-size: 12px;
+            }
+            @include responsive(xs) {
+                text-align: center;
             }
         }
         .icons {
