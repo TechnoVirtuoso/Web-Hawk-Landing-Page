@@ -48,12 +48,12 @@
         opacity: 0.8;
         margin-top: 36px;
         @include responsive(lg) {
-            font-size: 18px;
+            font-size: 20px;
             margin: 0 auto;
             margin-top: 20px;
         }
         @include responsive(md) {
-            font-size: 12px;
+            font-size: 16px;
             max-width: 300px;
         }
     }

@@ -100,7 +100,7 @@
                 font-weight: 300;
                 line-height: 36px;
                 margin-top: 12px;
-                @media (max-width: 1350px) {
+                @media (max-width: 1440px) {
                     font-size: 18px;
                 }
                 @include responsive(md) {
@@ -117,7 +117,7 @@
                 font-weight: 400;
                 line-height: 72px;
                 text-transform: capitalize;
-                @media (max-width: 1350px) {
+                @media (max-width: 1440px) {
                     font-size: 40px;
                     line-height: 50px;
                 }
@@ -132,7 +132,7 @@
                     font-style: normal;
                     text-transform: capitalize;
                     font-weight: 600;
-                    @media (max-width: 1350px) {
+                    @media (max-width: 1440px) {
                         font-size: 40px;
                     }
                     @include responsive(md) {
@@ -180,7 +180,7 @@
                 right: 50%;
                 top: 50%;
                 transform: translateY(-50%);
-                @media (max-width: 1350px) {
+                @media (max-width: 1440px) {
                     height: calc(100% - 50px);
                 }
 

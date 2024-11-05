@@ -125,6 +125,7 @@ const page = () => {
                         <>
                             <span>Choose</span>
                             <span className="mod"> the Plan That </span>
+                            <br />
                             <span>Fits Your </span>
                             <span className="mod"> Business </span>
                         </>
