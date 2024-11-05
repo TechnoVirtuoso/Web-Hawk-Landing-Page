@@ -35,8 +35,13 @@
             }
 
             @include responsive(lg) {
-                grid-template-columns: 1fr;
+                gap: 20px;
                 margin-top: 50px;
+            }
+
+            @include responsive(md) {
+                grid-template-columns: 1fr;
+                margin-top: 32px;
             }
 
             @include responsive(sm) {

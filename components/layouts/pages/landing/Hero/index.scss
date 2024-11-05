@@ -9,7 +9,6 @@
         background-size: cover;
 
         max-width: calc($max_w + 580px);
-        max-height: 95vh;
         margin: 0 auto;
 
         border-radius: 32px;
@@ -187,6 +186,9 @@
                         width: 100%;
                         @include responsive(lg) {
                             display: block;
+                        }
+                        @media (max-width: 1250px) {
+                            margin-bottom: -80px;
                         }
                         @include responsive(md) {
                             margin-bottom: -70px;

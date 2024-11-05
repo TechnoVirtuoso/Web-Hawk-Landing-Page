@@ -25,7 +25,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-color: #1B1578;
+        background-color: #1b1578;
 
         padding: 89px 20px;
 
@@ -100,6 +100,9 @@
                 font-weight: 300;
                 line-height: 36px;
                 margin-top: 12px;
+                @media (max-width: 1350px) {
+                    font-size: 18px;
+                }
                 @include responsive(md) {
                     font-size: 16px;
                     line-height: 1.5;
@@ -114,6 +117,10 @@
                 font-weight: 400;
                 line-height: 72px;
                 text-transform: capitalize;
+                @media (max-width: 1350px) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
                 @include responsive(md) {
                     font-size: 30px;
                     line-height: normal;
@@ -125,6 +132,9 @@
                     font-style: normal;
                     text-transform: capitalize;
                     font-weight: 600;
+                    @media (max-width: 1350px) {
+                        font-size: 40px;
+                    }
                     @include responsive(md) {
                         font-size: 30px;
                         line-height: normal;
@@ -170,6 +180,9 @@
                 right: 50%;
                 top: 50%;
                 transform: translateY(-50%);
+                @media (max-width: 1350px) {
+                    height: calc(100% - 50px);
+                }
 
                 @include responsive(lg) {
                     position: initial;

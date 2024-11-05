@@ -11,9 +11,10 @@
         gap: 20px;
 
         @include responsive(lg) {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
         }
         @include responsive(sm) {
+            grid-template-columns: 1fr;
             gap: 0;
         }
 
