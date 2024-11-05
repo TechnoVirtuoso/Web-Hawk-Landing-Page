@@ -108,6 +108,14 @@
                         @include responsive(sm) {
                             font-size: 36px;
                         }
+
+                        @media (max-width: 430px) {
+                            font-size: 30px;
+                        }
+
+                        @media (max-width: 375px) {
+                            font-size: 25px;
+                        }
                     }
                     .description {
                         margin-top: 40px;
@@ -175,6 +183,9 @@
                                 width: 165px !important;
                                 height: 48px !important;
                                 flex: 1;
+                            }
+                            @media (max-width: 430px) {
+                                font-size: 14px !important;
                             }
                         }
                     }
