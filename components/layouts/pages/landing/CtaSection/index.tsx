@@ -14,7 +14,7 @@ const CtaSection = () => {
                 }}
             >
                 <img src={LIGHT_GRID.src} alt="" className="grid" />
-                <div className="title">Start with Webhawk.ai today!</div>
+                <div className="title">Start with <br /> Webhawk.ai today!</div>
                 <div className="description">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's

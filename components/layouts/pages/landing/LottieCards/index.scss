@@ -15,7 +15,7 @@
         }
         @include responsive(sm) {
             grid-template-columns: 1fr;
-            gap: 0;
+            gap: 48px;
         }
 
         .card {
@@ -24,6 +24,11 @@
             // border: 1px solid #4f46e5;
             // border-left: 1px solid #231c91;
             border-radius: 12px;
+
+            @include responsive(sm) {
+                padding: 0;
+            }
+
             .frame {
                 display: flex;
                 justify-content: center;
@@ -49,6 +54,11 @@
                 flex-direction: column;
                 gap: 10px;
                 text-align: center;
+
+                padding-bottom: 30px;
+                border-bottom: 1px solid #231c91 !important;
+                border-radius: 12px;
+
                 @media (min-width: 1200px) {
                     height: calc(100% - 280px);
                     justify-content: space-between;

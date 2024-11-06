@@ -29,7 +29,7 @@
 
         @include responsive(md) {
             background-image: none !important;
-            background: linear-gradient(90deg, #1B1578, #2E279F) !important;
+            background: linear-gradient(90deg, #1b1578, #2e279f) !important;
             gap: 30px;
             border-radius: 10px;
         }
@@ -56,6 +56,11 @@
             font-weight: 700;
             line-height: 44px;
             text-transform: uppercase;
+            br {
+                @media (min-width: 632px) {
+                    display: none;
+                }
+            }
 
             @include responsive(md) {
                 font-size: 30px;
