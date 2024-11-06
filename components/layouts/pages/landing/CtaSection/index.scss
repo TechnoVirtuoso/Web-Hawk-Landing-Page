@@ -65,6 +65,10 @@
             @include responsive(md) {
                 font-size: 30px;
             }
+
+            @media (max-width: 375px) {
+                font-size: 22px;
+            }
         }
         .description {
             max-width: 900px;
