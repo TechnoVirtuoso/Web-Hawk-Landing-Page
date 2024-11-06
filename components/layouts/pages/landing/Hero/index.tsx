@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import DashboardImage from "@/assests/images/HeroDashboard.png";
 import Dashboard2 from "@/assests/images/Dashboard2.png";
 import MOBILE_Dashboard2 from "@/assests/images/HERO_MOBILE_DASHBOARD.png";
+import DASHBOARD_FULL_IMAGE_BORDER from "@/assests/images/DASHBOARD_FULL_IMAGE_BORDER.png";
 
 type Props =
     | {
@@ -53,7 +54,7 @@ const Hero: FC<Props> = ({ Background, type }) => {
                                 <>
                                     <img
                                         className="Landing-Hero-dashboard-bg"
-                                        src={DashboardImage.src}
+                                        src={DASHBOARD_FULL_IMAGE_BORDER.src}
                                         style={{
                                             position: "absolute",
                                         }}
