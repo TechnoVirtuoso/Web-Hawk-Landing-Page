@@ -11,9 +11,6 @@
         gap: 20px;
 
         @include responsive(lg) {
-            grid-template-columns: 1fr 1fr;
-        }
-        @include responsive(sm) {
             grid-template-columns: 1fr;
             gap: 48px;
         }
@@ -55,9 +52,11 @@
                 gap: 10px;
                 text-align: center;
 
-                padding-bottom: 30px;
-                border-bottom: 1px solid #231c91 !important;
-                border-radius: 12px;
+                @include responsive(md) {
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #231c91 !important;
+                    border-radius: 12px;
+                }
 
                 @media (min-width: 1200px) {
                     height: calc(100% - 280px);
