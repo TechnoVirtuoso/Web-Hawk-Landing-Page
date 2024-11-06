@@ -30,9 +30,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 280px !important;
 
                 @include responsive(lg) {
+                    overflow: initial !important;
+                    height: auto !important;
+                }
+
+                @include responsive(md) {
                     grid-template-columns: 1fr;
                     height: auto !important;
                     img {
@@ -52,7 +56,7 @@
                 gap: 10px;
                 text-align: center;
 
-                @include responsive(md) {
+                @include responsive(lg) {
                     padding-bottom: 30px;
                     border-bottom: 1px solid #231c91 !important;
                     border-radius: 12px;
@@ -60,7 +64,6 @@
 
                 @media (min-width: 1200px) {
                     height: calc(100% - 280px);
-                    justify-content: space-between;
                 }
 
                 .title {
@@ -114,8 +117,8 @@
                     margin-top: 30px;
                     width: 80%;
                     border: 1px solid #231c91;
-                    height: 42px !important;
-                    font-size: 20px;
+                    height: 60px !important;
+                    font-size: 24px;
                     @include responsive(md) {
                         font-size: 20px;
                         font-weight: 600;
