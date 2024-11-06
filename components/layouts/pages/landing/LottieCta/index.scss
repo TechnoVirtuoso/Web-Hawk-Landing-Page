@@ -26,6 +26,8 @@
                 border-right: 1px solid #231c91;
             }
             @include responsive(md) {
+                border-right: 0 solid transparent !important;
+                border-left: 0 solid transparent !important;
                 .content {
                     border-top-right-radius: 0;
                     border-top-left-radius: 0;
