@@ -126,6 +126,17 @@
                     line-height: normal;
                     text-align: center;
                 }
+
+                @media (min-width: 570px) {
+                    br {
+                        display: none;
+                    }
+                }
+
+                @media (max-width: 320px) {
+                    font-size: 26px;
+                }
+
                 .mod {
                     color: #fff;
                     font-size: 60px;
@@ -138,6 +149,9 @@
                     @include responsive(md) {
                         font-size: 30px;
                         line-height: normal;
+                    }
+                    @media (max-width: 320px) {
+                        font-size: 26px;
                     }
                 }
 

@@ -154,6 +154,7 @@ const page = () => {
                             <span className="mod">
                                 visitor data helps you understand
                             </span>
+                            <br />
                             <span> the potential.</span>
                         </>
                     )}
