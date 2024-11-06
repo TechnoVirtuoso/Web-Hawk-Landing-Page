@@ -32,6 +32,7 @@ const Hero: FC<Props> = ({ Background, type }) => {
                             <div className="title">
                                 Turn Your
                                 <span className="bld"> Website Traffic </span>
+                                <br />
                                 into Leads
                             </div>
                             <div className="description">

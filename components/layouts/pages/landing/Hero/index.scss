@@ -27,7 +27,10 @@
         }
         .Landing-Hero-dashboard-bg {
             left: 55%;
-            bottom: -10%;
+            bottom: -50px;
+            @media (max-width: 1500px) {
+                bottom: -90px;
+            }
 
             @include responsive(lg) {
                 display: none;
@@ -86,6 +89,15 @@
 
                         .bld {
                             font-weight: 900;
+                        }
+
+                        br {
+                            @media (min-width: 745px) {
+                                display: block;
+                            }
+                            @media (max-width: 545px) {
+                                display: none;
+                            }
                         }
 
                         @include responsive(xl) {
