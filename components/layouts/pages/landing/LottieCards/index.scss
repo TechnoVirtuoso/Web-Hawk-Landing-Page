@@ -30,13 +30,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                height: 280px !important;
 
                 @include responsive(lg) {
-                    overflow: initial !important;
-                    height: auto !important;
-                }
-
-                @include responsive(md) {
                     grid-template-columns: 1fr;
                     height: auto !important;
                     img {
@@ -60,10 +56,13 @@
                     padding-bottom: 30px;
                     border-bottom: 1px solid #231c91 !important;
                     border-radius: 12px;
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 0;
                 }
 
                 @media (min-width: 1200px) {
                     height: calc(100% - 280px);
+                    justify-content: space-between;
                 }
 
                 .title {
@@ -117,14 +116,16 @@
                     margin-top: 30px;
                     width: 80%;
                     border: 1px solid #231c91;
-                    height: 60px !important;
-                    font-size: 24px;
+                    height: 42px !important;
+                    font-size: 20px;
                     @include responsive(md) {
                         font-size: 20px;
                         font-weight: 600;
                     }
                     @include responsive(sm) {
+                        font-size: 18px;
                         width: 90% !important;
+                        height: 48px !important;
                     }
                 }
             }
