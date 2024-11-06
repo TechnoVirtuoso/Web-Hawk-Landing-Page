@@ -29,7 +29,7 @@
             left: 55%;
             bottom: -50px;
             @media (max-width: 1500px) {
-                bottom: -90px;
+                bottom: -150px;
             }
 
             @include responsive(lg) {
