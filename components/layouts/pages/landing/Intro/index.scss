@@ -20,10 +20,17 @@
             font-weight: 600;
         }
 
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
+        // display: flex;
+        // gap: 10px;
+        // flex-wrap: wrap;
+        // justify-content: center;
+
+        @media (min-width: 728px) {
+            br {
+                display: none;
+                position: absolute;
+            }
+        }
 
         @include responsive(lg) {
             font-size: 30px;

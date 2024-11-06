@@ -189,43 +189,57 @@
                             position: absolute;
                             bottom: 35px;
                             padding: 0;
+                            font-size: 20px;
                             font-family: $mont;
                             box-sizing: border-box;
                             border: 1px solid #231c91;
                             font-weight: 500;
+                            padding: 15px 25px;
 
-                            &.mid {
-                                width: 145px !important ;
-                                height: 55px !important;
-                                @include responsive(md) {
-                                    width: 111px !important;
-                                    height: 42px !important;
-                                    font-size: 16px;
-                                    font-weight: 600;
-                                }
+                            // &.mid {
+                            //     width: 145px !important ;
+                            //     height: 55px !important;
+                            //     font-size: 20px;
+                            //     @include responsive(md) {
+                            //         width: 111px !important;
+                            //         height: 42px !important;
+                            //         font-size: 16px;
+                            //         font-weight: 600;
+                            //     }
 
-                                @include responsive(md) {
-                                    position: relative !important;
-                                    bottom: -10px !important;
-                                    width: 100% !important;
-                                    margin-top: 10px;
-                                }
+                            //     @include responsive(md) {
+                            //         position: relative !important;
+                            //         bottom: -10px !important;
+                            //         width: 100% !important;
+                            //         margin-top: 10px;
+                            //     }
+                            // }
+
+                            // &.simple {
+                            //     width: 111px !important;
+                            //     height: 42px !important;
+                            //     font-size: 20px;
+                            //     @include responsive(md) {
+                            //         font-size: 16px;
+                            //         font-weight: 600;
+                            //     }
+                            //     @include responsive(md) {
+                            //         position: relative !important;
+                            //         bottom: -10px !important;
+                            //         width: 100% !important;
+                            //         margin-top: 10px;
+                            //     }
+                            // }
+
+                            @include responsive(md) {
+                                font-size: 16px;
+                                font-weight: 600;
                             }
 
-                            &.simple {
-                                width: 111px !important;
-                                height: 42px !important;
-                                @include responsive(md) {
-                                    font-size: 16px;
-                                    font-weight: 600;
-                                }
-
-                                @include responsive(md) {
-                                    position: relative !important;
-                                    bottom: -10px !important;
-                                    width: 100% !important;
-                                    margin-top: 10px;
-                                }
+                            @include responsive(md) {
+                                position: relative;
+                                bottom: 0;
+                                margin-top: 20px;
                             }
                         }
                     }
