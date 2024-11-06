@@ -61,8 +61,12 @@
                 }
 
                 @media (min-width: 1200px) {
-                    height: auto;
+                    height: calc(100% - 280px);
                     justify-content: space-between;
+                }
+
+                @media (max-width: 1250px) {
+                    height: auto;
                 }
 
                 .title {
@@ -123,9 +127,10 @@
                         font-weight: 600;
                     }
                     @include responsive(sm) {
-                        font-size: 18px;
+                        font-size: 18px !important;
                         width: 90% !important;
                         height: 48px !important;
+                        padding: 0;
                     }
                 }
             }
