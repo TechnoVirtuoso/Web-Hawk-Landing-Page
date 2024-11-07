@@ -54,7 +54,6 @@ const page = () => {
                     sub_title="Flexible pricing options for businesses of all sizes. Get started with the plan that works for you."
                     bg="LIGHT"
                 />
-                <Spacer paddingTop={100} breakpoints={{ 700: 50 }} />
             </div>
             <Spacer paddingTop={100} breakpoints={{ 700: 50 }} />
             <CtaSection />

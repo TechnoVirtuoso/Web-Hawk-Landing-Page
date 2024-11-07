@@ -8,7 +8,7 @@
     background-size: cover;
 
     &-wrapper {
-        max-width: calc($max_w + 1000px);
+        max-width: $max_w;
         position: relative;
         margin: 0 auto;
 
@@ -84,7 +84,13 @@
 
             @include responsive(md) {
                 margin-left: 0;
-                font-size: 14px;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            @include responsive(xs) {
+                margin-left: 0;
+                font-size: 16px;
                 line-height: 1.5;
             }
         }

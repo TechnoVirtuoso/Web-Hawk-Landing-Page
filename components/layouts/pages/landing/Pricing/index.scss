@@ -35,6 +35,7 @@
             }
 
             @include responsive(lg) {
+                grid-template-columns: 1fr 1fr 1fr;
                 gap: 20px;
                 margin-top: 50px;
             }
@@ -103,7 +104,7 @@
 
                         @include responsive(xl) {
                             padding: 30px 25px;
-                            padding-bottom: calc(30px + 35px + 35px);
+                            padding-bottom: calc(35px);
                         }
 
                         @include responsive(md) {
@@ -178,9 +179,11 @@
                                 &::marker {
                                     color: #4f46e5;
                                 }
+                                @include responsive(lg) {
+                                    font-size: 14px;
+                                }
 
                                 @include responsive(md) {
-                                    font-size: 16px;
                                     font-weight: 500;
                                 }
                             }
@@ -231,12 +234,16 @@
                             //     }
                             // }
 
-                            @include responsive(md) {
-                                font-size: 16px;
-                                font-weight: 600;
+                            @include responsive(lg) {
+                                position: relative;
+                                bottom: 0;
+                                margin-top: 40px;
+                                width: 100%;
                             }
 
                             @include responsive(md) {
+                                font-size: 16px;
+                                font-weight: 600;
                                 position: relative;
                                 bottom: 0;
                                 margin-top: 20px;

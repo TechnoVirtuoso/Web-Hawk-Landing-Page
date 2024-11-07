@@ -135,6 +135,7 @@
                         font-weight: 500;
                         line-height: 36px;
                         max-width: 666px;
+                        text-align: justify;
 
                         @include responsive(xl) {
                             font-size: 22px;

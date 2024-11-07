@@ -3,6 +3,7 @@
 import React, { FC, ReactNode, useEffect, useState } from "react";
 import FrameLight from "@/assests/images/FrameLight.png";
 import FrameDark from "@/assests/images/FrameDark.png";
+import FrameImage from "@/assests/images/Frame.png";
 
 const Frame: FC<{ children: ReactNode; font?: "LIGHT" }> = ({
     children,
@@ -21,6 +22,8 @@ const Frame: FC<{ children: ReactNode; font?: "LIGHT" }> = ({
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    const fr = isMobile ? FrameDark.src : FrameImage.src;
+
     return (
         <div
             className="frame"
@@ -32,7 +35,7 @@ const Frame: FC<{ children: ReactNode; font?: "LIGHT" }> = ({
             }}
         >
             <img
-                src={isMobile ? FrameDark.src : FrameLight.src}
+                src={fr}
                 alt="frame"
                 style={{
                     position: "absolute",
