@@ -1,7 +1,7 @@
 @import "@/sass/global_req.scss";
 
 .ModernImageCta {
-    padding: 100px 25px;
+    padding: 100px 50px;
 
     background: #f7f6ff;
     &.LIGHT {
@@ -15,7 +15,7 @@
     }
 
     @include responsive(md) {
-        padding: 50px 25px;
+        padding: 50px 50px;
     }
     &-wrapper {
         border-radius: 32px;
@@ -125,9 +125,14 @@
                     font-size: 30px;
                     line-height: normal;
                     text-align: center;
+                    // max-width: 96%;
+                    // margin: 0 auto;
                 }
 
-                @media (min-width: 570px) {
+                // @media (max-width: 528px) {
+                // //   font-size: 26px;
+                // }
+                @media (min-width: 668px) {
                     br {
                         display: none;
                     }

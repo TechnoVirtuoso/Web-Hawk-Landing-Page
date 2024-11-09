@@ -3,13 +3,13 @@
 .LottieCta {
     background-repeat: no-repeat;
     background-position: center;
-
-    padding: 0 25px;
-
+    padding: 0 50px;
     &.SIDE {
         .LottieCta-wrapper {
             border-left: 1px solid #231c91;
             border-radius: 6px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
             .content {
                 padding: 0px 26px;
                 padding-right: 0;

@@ -2,8 +2,8 @@
 
 import React, { FC, ReactNode, useEffect, useState } from "react";
 import FrameLight from "@/assests/images/FrameLight.png";
-import FrameDark from "@/assests/images/FrameDark.png";
-import FrameImage from "@/assests/images/Frame.png";
+import FrameDark from "@/assests/images/bg-border.png";
+import FrameImage from "@/assests/images/bg-border.png";
 
 const Frame: FC<{ children: ReactNode; font?: "LIGHT" }> = ({
     children,

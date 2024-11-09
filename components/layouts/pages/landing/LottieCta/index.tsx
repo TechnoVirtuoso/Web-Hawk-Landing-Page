@@ -45,6 +45,7 @@ const LottieCta: FC<Props> = ({
                     )}
                 </div>
                 <div className="image">
+                    {/* <div className="bg-border-color"></div> */}
                     {typeof IMAGE == "object" ? (
                         <img
                             src={IMAGE.src}

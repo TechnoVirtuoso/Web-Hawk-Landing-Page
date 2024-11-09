@@ -57,6 +57,7 @@ const page = () => {
                     description="We provide you with a simple script to embed on your website. This script acts like a digital 'hawk,' scanning your site's visitors in real-time. The moment someone lands on your page, Webhawk.ai gathers key insights about who they are and what they're interested in."
                     image={() => (
                         <Frame font="LIGHT">
+                            
                             <Lottie
                                 width="100%"
                                 className="object-cover object-center animate-item"
@@ -66,7 +67,7 @@ const page = () => {
                         </Frame>
                     )}
                 />
-                <Spacer paddingTop={150} breakpoints={{ 700: 48 }} />
+                <Spacer paddingTop={100} breakpoints={{ 700: 48 }} />
                 <LottieCta
                     Title={() => (
                         <>
@@ -91,7 +92,7 @@ const page = () => {
                     )}
                     isFlipped
                 />
-                <Spacer paddingTop={150} breakpoints={{ 700: 48 }} />
+                <Spacer paddingTop={100} breakpoints={{ 700: 48 }} />
                 <LottieCta
                     Title={() => (
                         <>
@@ -119,7 +120,7 @@ const page = () => {
                         </Frame>
                     )}
                 />
-                <Spacer paddingTop={150} breakpoints={{ 700: 60 }} />
+                <Spacer paddingTop={100} breakpoints={{ 700: 60 }} />
                 <Pricing
                     Title={() => (
                         <>

@@ -3,8 +3,7 @@
 .ImageCta {
     background-repeat: no-repeat;
     background-position: center;
-
-    padding: 0 25px;
+    padding: 0 50px;
     &-wrapper {
         max-width: $max_w;
         margin: 0 auto;
@@ -79,7 +78,7 @@
                 font-style: normal;
                 line-height: 36px;
                 font-weight: 300;
-                height: 53px;
+                // height: 53px;
                 @include responsive(lg) {
                     font-size: 18px;
                 }
