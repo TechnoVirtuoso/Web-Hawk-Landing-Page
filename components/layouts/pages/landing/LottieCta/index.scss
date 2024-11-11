@@ -118,13 +118,13 @@
                     margin: 20px 0;
                     font-size: 18px;
                     line-height: 1.5;
-                    text-align: center;
                 }
                 @include responsive(md) {
                     font-size: 12px;
                     margin: 10px auto;
                     margin-bottom: 0;
                     padding: 0px 10px !important;
+                    text-align: center !important;
                 }
             }
             button {
