@@ -17,6 +17,10 @@
     @include responsive(md) {
         padding: 50px 50px;
     }
+
+    @media (max-width: 400px) {
+        padding: 50px 25px;
+    }
     &-wrapper {
         border-radius: 32px;
         overflow: hidden;
